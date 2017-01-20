@@ -66,6 +66,12 @@ app.get('/about', (req, res) => {
   });
 });
 
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs', {
+    pageTitle: 'Projects Page'
+  });
+})
+
 app.get('/hummingbird', (req, res) => {
   res.send({
     locomotion: 'Flight',
